@@ -1,0 +1,34 @@
+{
+  "name": "Lab 1",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": "."
+  },
+  
+  "features": {
+    "ghcr.io/devcontainers/features/git:1": {},
+    "ghcr.io/devcontainers/features/github-cli:1": {}
+  },
+
+  "customizations": {
+    "vscode": {
+      "extensions": [
+        "mhutchie.git-graph",
+        "hashicorp.terraform",
+        "ms-azuretools.vscode-docker",
+        "amazonwebservices.aws-toolkit-vscode"
+      ],
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "git.enableSmartCommit": true,
+        "git.confirmSync": false,
+        "terraform.format.enable": true,
+        "terraform.formatOnSave": true
+      }
+    }
+  },  
+  "mounts": [
+    "source=${localEnv:HOME}/.ssh,target=/home/vscode/.ssh,type=bind,consistency=cached"
+  ]
+}
+
