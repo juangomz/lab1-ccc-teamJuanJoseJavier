@@ -4,6 +4,7 @@
 
 # Terraform directory
 infra/.terraform/
+infra/.aws
 
 # Crash log files
 crash.log

@@ -16,7 +16,7 @@
         "mhutchie.git-graph",
         "hashicorp.terraform",
         "ms-azuretools.vscode-docker",
-        "amazonwebservices.aws-toolkit-vscode"
+        "amazonwebservices.aws-toolkit-vscode",
         "wayou.vscode-todo-highlight"
       ],
       "settings": {
